@@ -1,8 +1,4 @@
 CATEGORY = {
-    placeholder: {
-        name: "placeholder",
-        color: "#eba82cff"
-    },
     citacao: {
         name: "Citação",
         color: "#1de73eff"
@@ -11,10 +7,22 @@ CATEGORY = {
         name: "Referência",
         color: "#075cddff"
     },
-    resumo: {},
-    introducao: {},
-    metodologia: {},
-    conclusao: {},
+    resumo: {
+        name: "Resumo",
+        color: "#6d6d6dff"
+    },
+    introducao: {
+        name: "Introdução",
+        color: "#6d6d6dff"
+    },
+    metodologia: {
+        name: "Metodologia",
+        color: "#6d6d6dff"
+    },
+    conclusao: {
+        name: "Conclusão",
+        color: "#6d6d6dff"
+    },
     oficial: {
         name: "Material Oficial da ABNT",
         color: "#034CAE"
@@ -43,9 +51,6 @@ const {referencia, citacao, introducao, resumo, metodologia, conclusao, oficial,
 // ! REFERÊNCIAS AQUI ! //
 // ? Ordem dos parâmetros: Nome, descrição, link, categoria
 
-// * Placeholder
-new Tool("Placeholder name","Placeholder description is better if it have more than ten words, to simulate a real description.", "https://twitch.tv/guiven", [CATEGORY.placeholder])
-
 
 // * Citações
 new Tool("Como citar", "Material sobre citação da NBR 10520/2023.", "https://www.normasabnt.org/nbr-10520/", [CATEGORY.citacao])
@@ -62,5 +67,5 @@ new Tool("Informação e documentação — Citações em documentos — Apresen
 
 
 // * Materiais gerais
-new Tool("Guia Referências e Citações", "Material da PUC Minas para auxiliar referências e citações ABNT.", "https://www.pucminas.br/biblioteca/DocumentoBiblioteca/ABNT-Formatar-indicar-citacoes-e-referencia-las.pdf", [CATEGORY.multi])
+new Tool("Guia Referências e Citações", "Material da PUC Minas para auxiliar referências e citações ABNT.", "https://www.pucminas.br/biblioteca/DocumentoBiblioteca/ABNT-Formatar-indicar-citacoes-e-referencia-las.pdf", [multi, referencia, citacao])
 new Tool("BibGuru", "Gerador de referências bibliográficas", "https://www.bibguru.com/br/c/gerador-referencias-bibliograficas-abnt/", [referencia])

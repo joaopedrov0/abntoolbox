@@ -1,12 +1,25 @@
-const containerRow = document.querySelector('.container .row')
+const container = document.querySelector('.container')
 
 
 document.addEventListener('DOMContentLoaded', (e) => {
     console.log(`Loaded data: ${data}`)
 
-    data.forEach(el => {
-        containerRow.innerHTML += createCard(el)
-    });
+    for(let cat in CATEGORY){
+        let temp = ""
+        let category = CATEGORY[cat]
+        data.forEach(el => {
+            if (el.categories.includes(category)){
+                temp += createCard(el)
+            }
+        });
+        if (temp === "")
+            continue
+
+        container.innerHTML += `
+        <h2 class="mt-5 mb-3">${category.name}</h2>
+        <div class="row g-2">${temp}</div>`
+    }
+
 })
 
 function createCard(obj){
