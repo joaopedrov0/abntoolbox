@@ -5,10 +5,8 @@
 **ABNToolbox** é um conjunto leve de utilitários e snippets para acelerar a formatação e a redação científica seguindo as principais regras da ABNT. O projeto fornece ferramentas via interface web (arquivos estáticos) para gerar e formatar trechos comuns — referências, citações, sumário, formatação de títulos, entre outros.
 
 ## **Como contribuir — Adicionar novas ferramentas**
-Siga estes passos para criar ou melhorar ferramentas no projeto:
 
-1. Fork do repositório e crie uma branch com nome descritivo: `feature/nova-ferramenta`.
-2. Abra `data.js` e adicione um novo objeto para sua ferramenta. Exemplo de estrutura sugerida:
+Para adicionar novas ferramentas, abra o arquivo `data.js` e adicione um novo objeto como descrito abaixo:
 
 ```javascript
 // exemplo mínimo em data.js
