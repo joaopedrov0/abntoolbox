@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
 function createCard(obj){
     return `
-    <div class="col-sm-4 mb-3 mb-sm-0">
+    <div class="col-lg-4 col-md-6 mb-3 mb-sm-0">
         <div class="card">
         <div class="card-body">
             <h5 class="card-title">${obj.name}</h5>
